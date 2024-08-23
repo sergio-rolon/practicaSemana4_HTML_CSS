@@ -1,0 +1,46 @@
+:root {
+  --bg-color: #00712d;
+  --nav-bg-color: #d5ed9f;
+  --text-color: #fffbe6;
+  --title-text-color: #ff9100;
+}
+/* Quitar padding al nav y cambiarle de color */
+#nav-grl-container,
+#nav-sub1-container,
+#nav-sub2-container {
+  background-color: var(--nav-bg-color);
+  padding: 0;
+}
+
+/* Cambiar color de los títulos */
+#titulo-h1,
+#titulo-h2-uno,
+#titulo-h2-dos,
+#titulo-h2-tres {
+  color: var(--title-text-color);
+}
+/* Cambiar color del párrafo principal */
+#intro-color {
+  background-color: var(--bg-color);
+  padding: 0;
+}
+/* Justificar textos y cambiar color en parrafos */
+p {
+  text-align: justify;
+  color: var(--text-color);
+}
+/* Primer párrafo quitar margen */
+#parrafo-uno {
+  margin: 0px;
+}
+/* Cambiar color al fondo del carrussel */
+#carousel-slide1,
+#carousel-slide2,
+#carousel-slide3 {
+  background-color: var(--bg-color);
+}
+/* Ajustar tamaño imagenes */
+img {
+  width: 600px;
+  height: 400px;
+}
