@@ -1,8 +1,13 @@
 :root {
-  --bg-color: #00712d;
-  --nav-bg-color: #d5ed9f;
-  --text-color: #fffbe6;
-  --title-text-color: #ff9100;
+  --bg-color: #ebd3f8;
+  --nav-bg-color: #ad49e1;
+  --text-color: #2e073f;
+  --title-text-color: #7a1cac;
+}
+/* Cambiamos color flechas slider */
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+  filter: invert(100%);
 }
 /* Quitar padding al nav y cambiarle de color */
 #nav-grl-container,
@@ -18,16 +23,20 @@
 #titulo-h2-dos,
 #titulo-h2-tres {
   color: var(--title-text-color);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 /* Cambiar color del párrafo principal */
 #intro-color {
   background-color: var(--bg-color);
   padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 /* Justificar textos y cambiar color en parrafos */
 p {
   text-align: justify;
   color: var(--text-color);
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 /* Primer párrafo quitar margen */
 #parrafo-uno {
@@ -43,4 +52,12 @@ p {
 img {
   width: 600px;
   height: 400px;
+}
+/* Cambiar color footer */
+footer {
+  background-color: var(--nav-bg-color);
+}
+
+.carousel-item {
+  height: 1020px;
 }

@@ -11,12 +11,16 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+        <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
   </head>
   <body>
     <!-- Nav personalizado -->
-    <div class="container-fluid" id="nav-grl-container">
+    <div class="container-fluid sticky-top" id="nav-grl-container">
       <nav
-        class="navbar navbar-expand-lg navbar-light bg-light"
+        class="navbar navbar-expand-lg navbar-light bg-light nav-underline"
         id="nav-sub1-container"
       >
         <div class="container-fluid" id="nav-sub2-container">
@@ -32,33 +36,37 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
+            <ul class="navbar-nav ms-lg-auto">
+              <li class="nav-item  fs-5">
                 <a
-                  class="nav-link active"
+                  class="nav-link"
                   aria-current="page"
                   href="../inicio.html"
-                  >Inicio</a
+                  ><i class="bi bi-house-fill"></i> Inicio</a
                 >
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../HTML/informes.html">Informes</a>
+              <li class="nav-item  fs-5">
+                <a class="nav-link  active" href="../HTML/visita.html"
+                  ><i class="bi bi-airplane-fill"></i> Visita</a
+                >
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../HTML/visita.html">Visita</a>
+              <li class="nav-item  fs-5">
+                <a class="nav-link" href="../HTML/informes.html"
+                  ><i class="bi bi-info-square-fill"></i> Informes</a
+                >
               </li>
             </ul>
           </div>
         </div>
       </nav>
-      <!-- Fin nav -->
+    </div>
+    <!-- Fin nav -->
     </div>
     <div class="container-fluid" id="intro-color">
-      <h1 class="text-center mx-auto" id="titulo-h1">Visita</h1>
-      <p class="mx-auto text-center" id="parrafo-uno">
-        En esta página se mostrarán 3 ubicaciones para visitar, por lo que se ha
-        generado una lista con una imagen, nombre, descripción, ubicación,
-        horarios y costos de los lugares recomendados.
+      <h1 class="text-center mx-auto pt-4" id="titulo-h1">Visita</h1>
+      <p class="w-75 text-center mx-auto px-3 pt-3 fs-5" id="parrafo-uno">
+        En esta página se mostrarán 3 ubicaciones para visitar, <strong>da click en las flechas</strong> para visualizar cada uno, <strong>se mostrará en la parte inferior de la foto</strong> del lugar, su nombre, descripción, ubicación,
+        horarios y costos.
       </p>
     </div>
     <!-- slider -->
@@ -88,15 +96,16 @@
       <div class="carousel-inner">
         <div class="carousel-item active" id="carousel-slide1">
           <!-- Slide 1 -->
+           <hr>
           <img
             src="https://previews.123rf.com/images/barborakupcova/barborakupcova2001/barborakupcova200100023/138781366-el-puente-colgante-m%C3%A1s-antiguo-puente-de-arcediano-en-m%C3%A9xico-guadalajara.jpg"
-            class="d-block mx-auto"
+            class="d-block mx-auto object-fit-cover border rounded"
             alt="Puente de arcediano"
           />
           <h2 class="w-75 mx-auto text-center" id="titulo-h2-uno">
             Puente de Arcediano en la Barranca de Huentitán
           </h2>
-          <p class="w-75 mx-auto">
+          <p class="w-75 mx-auto fs-5">
             Fue construido en el año de 1894 por el ingeniero Salvador Collado
             como auxiliar en el cruce del entonces muy caudaloso río Grande de
             Santiago, es considerado patrimonio arquitectónico. El puente de
@@ -105,27 +114,28 @@
             historia que ahora son un punto obligado y postal de muchas fotos de
             los visitantes a la Barranca de Huentitán.
           </p>
-          <p class="w-75 mx-auto">
+          <p class="w-75 mx-auto fs-5">
             <strong>Ubicación:</strong> Av. Belisario Domínguez 4486, Dr Atl,
             44399 Guadalajara, Jal.
           </p>
-          <p class="w-75 mx-auto">
+          <p class="w-75 mx-auto fs-5">
             <strong>Horarios:</strong> 6:00 am a 22:00 horas
           </p>
-          <p class="w-75 mx-auto"><strong>Costo:</strong> Gratuito</p>
-          <br /><br /><br />
+          <p class="w-75 mx-auto fs-5"><strong>Costo:</strong> Gratuito</p>
+          <br />
         </div>
         <!-- Slide 2 -->
         <div class="carousel-item" id="carousel-slide2">
+          <hr>
           <img
             src="https://pbs.twimg.com/media/Eh_GXaGWkAcVD0S.jpg"
-            class="d-block mx-auto"
+            class="d-block mx-auto object-fit-cover border rounded"
             alt="Museo Cabañas"
           />
           <h2 class="w-75 mx-auto text-center" id="titulo-h2-dos">
             Museo Cabañas
           </h2>
-          <p class="w-75 mx-auto">
+          <p class="w-75 mx-auto  fs-5">
             Este hospicio se creó a principios del siglo XIX para dispensar
             cuidados y ofrecer asilo a toda suerte de desamparados, ya fuesen
             huérfanos, ancianos, discapacitados o inválidos. El conjunto
@@ -140,32 +150,33 @@
             de los grandes muralistas mexicanos de la época. Estas pinturas se
             consideran hoy en día una gran obra maestra del arte mejicano.
           </p>
-          <p class="w-75 mx-auto">
-            Ubicación: Calle Cabañas No. 8. Colonia Las Fresas. Plaza Tapatía.
-            CP 44360. Guadalajara, Jalisco.
+          <p class="w-75 mx-auto fs-5">
+            <strong>Ubicación:</strong> Calle Cabañas No. 8. Colonia Las Fresas.
+            Plaza Tapatía. CP 44360. Guadalajara, Jalisco.
           </p>
-          <p class="w-75 mx-auto">
-            Horarios: Martes a Domingo de 10:00 a 17:00 horas.
+          <p class="w-75 mx-auto fs-5">
+            <strong>Horarios:</strong> Martes a Domingo de 10:00 a 17:00 horas.
           </p>
-          <p class="w-75 mx-auto">
-            Costo:$80: General / $55: Presentando credencial de elector, o
-            licencia de manejo nacional. / $30: Maestros, estudiantes, adultos
-            mayores y niños de 6 a 12 años (con credencial vigente) / $30:
-            Boleto para personas con discapacidad
+          <p class="w-75 mx-auto fs-5">
+            <strong>Costo:$80:</strong> General / $55: Presentando credencial de
+            elector, o licencia de manejo nacional. / $30: Maestros,
+            estudiantes, adultos mayores y niños de 6 a 12 años (con credencial
+            vigente) / $30: Boleto para personas con discapacidad
           </p>
-          <br />
         </div>
         <!-- slide 3 -->
+         
         <div class="carousel-item" id="carousel-slide3">
+          <hr>
           <img
             src="https://offloadmedia.feverup.com/guadalajarasecreta.com/wp-content/uploads/2022/08/07034155/city-pass-1024x683.jpg"
-            class="d-block mx-auto"
+            class="d-block mx-auto object-fit-cover border rounded"
             alt="Acuario Michin"
           />
           <h2 class="w-75 mx-auto text-center" id="titulo-h2-tres">
             Acuario Michin
           </h2>
-          <p class="w-75 mx-auto">
+          <p class="w-75 mx-auto fs-5">
             Acuario Michin Guadalajara es una institución educativa, científica
             y recreativa cuyo principal objetivo es promover la conservación de
             la biodiversidad.A través de cinco pabellones dedicados a culturas
@@ -177,18 +188,17 @@
             muestra la sabia cosmovisión de las culturas presentes en el
             acuario.
           </p>
-          <p class="w-75 mx-auto">
-            Ubicación: C. Mariano Bárcena 990, Zona Centro, 44260 Guadalajara,
-            Jal.
+          <p class="w-75 mx-auto fs-5">
+            <strong>Ubicación:</strong> C. Mariano Bárcena 990, Zona Centro,
+            44260 Guadalajara, Jal.
           </p>
-          <p class="w-75 mx-auto">
-            Horarios: Lunes a domingo de 09:00 am a 20:00 hrs
+          <p class="w-75 mx-auto fs-5">
+            <strong>Horarios:</strong> Lunes a domingo de 09:00 am a 20:00 hrs
           </p>
-          <p class="w-75 mx-auto">
-            Costos: El Acceso Total tiene un costo de $259 por persona se paga a
-            partir de los 3 años.
+          <p class="w-75 mx-auto fs-5">
+            <strong>Costos:</strong> El Acceso Total tiene un costo de $259 por
+            persona se paga a partir de los 3 años.
           </p>
-          <br /><br /><br />
         </div>
       </div>
       <button
@@ -210,6 +220,13 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+        <!-- Footer -->
+    <footer class="text-center">
+      <small class="text-black"
+        ><strong>&copy; 2024 Sergio Rolón Cisneros </strong></small
+      >
+    </footer>
+    <!-- Fin footer -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

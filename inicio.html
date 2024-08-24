@@ -4,65 +4,160 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inicio</title>
-    <link rel="stylesheet" href="CSS/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="CSS/styles_inicio.css" />
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href="inicio.html">Inicio</a></li>
-        <li><a href="HTML/visita.html">Visita</a></li>
-        <li><a href="HTML/informes.html">Informes</a></li>
-      </ul>
-    </nav>
-    <div class="contenido">
+    <!-- Nav personalizado -->
+    <div class="container-fluid sticky-top" id="nav-grl-container">
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-light nav-underline"
+        id="nav-sub1-container"
+      >
+        <div class="container-fluid" id="nav-sub2-container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-lg-auto">
+              <li class="nav-item fs-5">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../inicio.html"
+                  ><i class="bi bi-house-fill"></i> Inicio</a
+                >
+              </li>
+              <li class="nav-item fs-5">
+                <a class="nav-link" href="../HTML/visita.html"
+                  ><i class="bi bi-airplane-fill"></i> Visita</a
+                >
+              </li>
+              <li class="nav-item fs-5">
+                <a class="nav-link" href="../HTML/informes.html"
+                  ><i class="bi bi-info-square-fill"></i> Informes</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- Fin nav -->
+    <div class="container">
       <!-- Nombre del lugar (título e imagen). -->
-      <h1>Guadalajara</h1>
-      <div class="img" id="img_guadalajara">
-        <img
-          src="https://www.eloccidental.com.mx/incoming/n96dr4-la-minerva-1957.jpg/ALTERNATES/LANDSCAPE_1140/La%20Minerva%201957.jpg"
-          alt="Imagen Guadalajara"
-        />
+      <!-- 1ra fila -->
+      <div class="row">
+        <div class="col-12 text-center">
+          <h1 class="w-50 text-center mx-auto pt-4">Guadalajara</h1>
+        </div>
+        <div class="img-container col-lg-6 d-flex align-items-center py-4">
+          <img
+            class="border rounded img-fluid d-block mx-auto"
+            src="https://www.eloccidental.com.mx/incoming/n96dr4-la-minerva-1957.jpg/ALTERNATES/LANDSCAPE_1140/La%20Minerva%201957.jpg"
+            alt="Imagen Guadalajara"
+          />
+        </div>
+        <div
+          class="col-lg-6 d-flex flex-column align-items-center justify-content-center"
+        >
+          <!-- Historia del lugar (titulo, párrafo e imagen del lugar en un mapa). -->
+          <h2>Historia del lugar</h2>
+          <br />
+          <p class="fs-5">
+            El 14 de febrero de 1542 se fundó la ciudad de Guadalajara en el
+            sitio donde actualmente se encuentra; asentándose, además de Oñate,
+            63 familias españolas (incluida por aquel entonces Portugal).
+          </p>
+        </div>
       </div>
-      <!-- Historia del lugar (titulo, párrafo e imagen del lugar en un mapa). -->
-      <h2>Historia del lugar</h2>
-      <p>
-        El 14 de febrero de 1542 se fundó la ciudad de Guadalajara en el sitio
-        donde actualmente se encuentra; asentándose, además de Oñate, 63
-        familias españolas (incluida por aquel entonces Portugal).
-      </p>
-      <div class="img" id="img_historia">
-        <img
-          src="https://www.google.com/maps/vt/data=OPOzKihejVKN1BdO2zHVNgpQEGsbs9FWGE27iswSWslhSLGSg5QbNfrGH1XqWGaFiOcwt4ze7AnCQvj1iaHLECjMdsh0b2cVyj8BPKwKgEKwy-G_y2PUOOA6sXTOreDfZQau8PAVhXfW9Wehzab68WJ6JgItk1bezer3wdEqFRXjRGbf4McpIwEQrW7mPO58oDJfotxvprLFbIk0FpiF1QqABrwG2wj7EFwWC8g8uksRcY-PBA820NmA1lwbzDUdoQuQw57WvVBdrsxHylSv"
-          alt="Mapa de Gdl"
-        />
+      <!-- 2da fila -->
+      <div class="row">
+        <div
+          class="img-container col-lg-6 d-flex align-items-center order-lg-2 py-4"
+        >
+          <img
+            class="border rounded img-fluid d-block mx-auto"
+            src="https://www.google.com/maps/vt/data=OPOzKihejVKN1BdO2zHVNgpQEGsbs9FWGE27iswSWslhSLGSg5QbNfrGH1XqWGaFiOcwt4ze7AnCQvj1iaHLECjMdsh0b2cVyj8BPKwKgEKwy-G_y2PUOOA6sXTOreDfZQau8PAVhXfW9Wehzab68WJ6JgItk1bezer3wdEqFRXjRGbf4McpIwEQrW7mPO58oDJfotxvprLFbIk0FpiF1QqABrwG2wj7EFwWC8g8uksRcY-PBA820NmA1lwbzDUdoQuQw57WvVBdrsxHylSv"
+            alt="Mapa de Gdl"
+          />
+        </div>
+        <div
+          class="col-lg-6 d-flex flex-column align-items-center justify-content-center"
+        >
+          <!-- Lugar en la actualidad (titulo, párrafo e imagen del lugar actualmente). -->
+          <h2>Lugar en la actualidad</h2>
+          <br />
+          <p class="fs-5">
+            Hoy nuestra ciudad es reconocida por la calidez de su gente y por la
+            calidad de vida que ofrece a sus habitantes. Guadalajara se ha
+            consolidado como una de las grandes capitales de América, como una
+            ciudad cultural, diversa e innovadora.
+          </p>
+        </div>
       </div>
-      <!-- Lugar en la actualidad (titulo, párrafo e imagen del lugar actualmente). -->
-      <h2>Lugar en la actualidad</h2>
-      <p>
-        Hoy nuestra ciudad es reconocida por la calidez de su gente y por la
-        calidad de vida que ofrece a sus habitantes. Guadalajara se ha
-        consolidado como una de las grandes capitales de América, como una
-        ciudad cultural, diversa e innovadora.
-      </p>
-      <div class="img" id="img_lugar">
-        <img
-          src="https://tecolotito.elsiglodetorreon.com.mx/i/2020/03/1286894.jpeg"
-          alt="Mapa de Gdl"
-        />
-      </div>
-      <!-- Lista con datos curiosos/importantes (título y lista ordenada/desordenada). -->
-      <div class="lista" id="lista_datos">
-        <ul>
-          <li>
-            El nombre de Guadalajara tiene origen árabe (valle de piedras)
-          </li>
-          <li>
-            Las famosas tortas ahogadas es la comida más icónica de ese lugar
-          </li>
-          <li>Esta ciudad es conocida como Silicon Valley de México</li>
-          <li>Guadalajara tiene el mercado más grande de América Latina</li>
-        </ul>
+      <!-- 3ra fila -->
+      <div class="row">
+        <div class="img-container col-lg-6 d-flex align-items-center">
+          <img
+            class="border rounded img-fluid d-block mx-auto py-4"
+            src="https://tecolotito.elsiglodetorreon.com.mx/i/2020/03/1286894.jpeg"
+            alt="La minerva gdl"
+          />
+        </div>
+        <div
+          class="col-lg-6 d-flex flex-column align-items-center justify-content-center"
+        >
+          <h2>Datos curiosos</h2>
+          <br />
+          <!-- Lista con datos curiosos/importantes (título y lista ordenada/desordenada). -->
+
+          <ol class="list-group-numbered p-0">
+            <li class="list-group-item fs-5">
+              El nombre de Guadalajara tiene origen árabe (valle de piedras).
+            </li>
+            <li class="list-group-item fs-5">
+              Las famosas tortas ahogadas son la comida más icónica de ese
+              lugar.
+            </li>
+            <li class="list-group-item fs-5">
+              Esta ciudad es conocida como Silicon Valley de México.
+            </li>
+            <li class="list-group-item fs-5">
+              Guadalajara tiene el mercado más grande de América Latina.
+            </li>
+          </ol>
+        </div>
       </div>
     </div>
+    <!-- Footer -->
+    <footer class="text-center">
+      <small class="text-black"
+        ><strong>&copy; 2024 Sergio Rolón Cisneros </strong></small
+      >
+    </footer>
+    <!-- Fin footer -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
