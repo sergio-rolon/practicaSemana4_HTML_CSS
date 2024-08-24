@@ -57,7 +57,18 @@ img {
 footer {
   background-color: var(--nav-bg-color);
 }
-
-.carousel-item {
-  height: 1020px;
+/* Cambiar tamaños item slides responsivos */
+@media (width< 1324px) {
+  #carousel-slide1,
+  #carousel-slide2,
+  #carousel-slide3 {
+    height: 1500px;
+  }
+}
+@media (width> 1323px) {
+  #carousel-slide1,
+  #carousel-slide2,
+  #carousel-slide3 {
+    height: 1020px;
+  }
 }
