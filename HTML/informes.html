@@ -67,53 +67,58 @@
       </p>
     </div>
     <div
-      class="container-fluid d-flex justify-content-center"
+      class="container-fluid d-flex justify-content-center py-5"
       id="container-content"
     >
       <form class="row g-3 fs-5" id="content-rows">
-        <div class="col-md-6">
+        <div class="col-sm-12 col-md-4 text-center">
           <label for="nombre_informes" class="form-label">Nombre</label>
           <input
             type="text"
-            class="form-control"
+            class="form-control border border-black"
             id="nombre_informe"
             placeholder="Opcional que sea completo"
           />
         </div>
-        <div class="col-md-6">
+        <div class="col-sm-12 col-md-4 text-center">
           <label for="num_contacto_informes" class="form-label"
             >Numero de contacto</label
           >
           <input
             type="text"
-            class="form-control"
+            class="form-control border border-black"
             id="num_contacto_informes"
             placeholder="Incluye lada de tu país: Mx +52 / EUA +1 / etc."
           />
         </div>
-        <div class="col-12">
+        <div class="col-sm-12 col-md-4 text-center">
           <label for="correo_informes" class="form-label"
             >Correo de contacto</label
           >
           <input
             type="email"
-            class="form-control"
+            class="form-control border border-black"
             id="correo_informes"
             placeholder="...@gmail.com"
             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
           />
         </div>
-        <div class="col-12">
+        <div class="col-12 p-1 mb-2 text-center">
           <label for="mensaje_informes" class="form-label">Mensaje</label>
           <textarea
-            class="form-control"
+            class="form-control border border-black"
             id="mensaje_informes"
             placeholder="Platicanos tus dudas"
             rows="3"
           ></textarea>
         </div>
-        <div class="col-12 text-center pb-3">
-          <button type="submit" class="btn btn-success fs-5">Enviar</button>
+        <div class="col-12 text-center pb-5">
+          <button
+            type="submit"
+            class="btn btn-success fs-5 border border-black"
+          >
+            Enviar
+          </button>
         </div>
       </form>
       <br />

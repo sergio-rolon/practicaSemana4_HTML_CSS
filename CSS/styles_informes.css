@@ -1,10 +1,10 @@
+/* Variables */
 :root {
   --bg-color: #ebd3f8;
   --nav-bg-color: #ad49e1;
   --text-color: #2e073f;
   --title-text-color: #7a1cac;
 }
-
 /* Quitar padding al nav y cambiarle de color */
 #nav-grl-container,
 #nav-sub1-container,
@@ -12,7 +12,7 @@
   background-color: var(--nav-bg-color);
   padding: 0;
 }
-
+/* Dar formato a los contenidos */
 #container-content {
   background-color: var(--bg-color);
   color: var(--text-color);
@@ -20,7 +20,7 @@
   margin: 0px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
+/* Hacer responsivo formato de los contenidos */
 @media (max-width: 767.98px) {
   #container-content {
     padding-left: 0px;
@@ -39,7 +39,7 @@
   padding: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
+/* Cambiar formato filas */
 #content-rows {
   background-color: var(--bg-color);
   margin: 0px;
@@ -55,13 +55,11 @@ p {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
 /* Cambiar tamaño formulario y fuente */
 #mensaje_informes {
   height: 88px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
 /* Cambiar color footer */
 footer {
   background-color: var(--nav-bg-color);
